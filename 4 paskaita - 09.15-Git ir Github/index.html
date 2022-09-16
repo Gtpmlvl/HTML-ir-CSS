@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="../4 paskaita - 09.15-Git ir Github/main.css"
+    />
+    <link rel="icon" href="./images/logo-wide-kkml.png" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#position">Position</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="position">
+        <h1>Position</h1>
+        <ul>
+          <li>Static - Statinė</li>
+          <li>Relative - Reliatyvioji</li>
+          <li>Absolute - Absoliučioji</li>
+          <li>Fixed - Fiksuotiji</li>
+          <li>Sticky - Lipnioji</li>
+        </ul>
+        <p>
+          Naudojant bet kurią apart Statinės pozicijos gauname prieigą prie bet
+          kurių 5 naujų stilių: top,left,right, bottom ir z-index.<br />
+          Šitie stiliai nurodo per kokį atstumą elemntas turi būti
+          atitrauktas.<br />
+          Z-index stilius nurodo elemento prioritetą sluoksniuose.( kuris
+          elementas užlips ant kurio elemento esant persidengimui)
+        </p>
+        <p>
+          Statinė pozicija - nieko ypatingo nedaro. Net nesuteikia galymybės
+          naudoti top/left/right/bottom;
+        </p>
+        <div class="kvadratuKonteineris">
+          <div class="kvadratas statinis">Static 1</div>
+          <div class="kvadratas statinis top_20">Static 2</div>
+          <div class="kvadratas statinis">Static 3</div>
+          <div class="kvadratas statinis">Static 4</div>
+        </div>
+        <p>
+          Relliatyvioji pozicija - nieko įpatingo nedaro. Bet suteikia galymybę
+          naudoti top/left/right/bottom/z-index.<br />
+          Elementui suteikus top/left/right/bottom stilius, jisai atsitraukia
+          per nurodytą atstumą, nuo savo pradinės pozicijos.
+        </p>
+        <div class="kvadratuKonteineris">
+          <div class="kvadratas statinis top_20">Relative 1</div>
+          <div class="kvadratas reliatyvus right_40 top_20">Relative 2</div>
+          <div class="kvadratas reliatyvus left_30 z_index">Relative 3</div>
+          <div class="kvadratas reliatyvus z">Relative 4</div>
+        </div>
+        <p></p>
+          Absoliučioji pozicija - Elementas išeina iš puslapio tekmės (praranda
+          savo pozicija).<br>Elementui suteikus top/right/left/bottom stilius, jisai atsitraukia per nurodytą atstumą, nuo artimiuasio tėvinio/senelinio/prosenelinio elemnto, kuris turi kokią nors pozicija apart Static( jeigu neranda nuo HTMl(ekrano kraštų))
+
+        </p>
+        <div class="reliatyvus kvadratuKonteineris">
+          <div class="kvadratas statinis">Static 1</div>
+          <div class="kvadratas statinis">Static 2</div>
+          <div class="kvadratas absolute bottom_30">Absolute 3</div>
+          <div class="kvadratas statinis">Static 4</div>
+        </div>
+        <p> 
+          Fiksuotiji pozicija - elementas išeina iš puslapio tekmės ir fixuojasi nurodytoje arba pradinėje pozicijoje.<br>Elementui suteikus top/right/left/bottom stilius, jisai atsitraukia per nurodytą atstumą, nuo ekrano kraštų. Taip pat, jeigu nėra nustatytas elemnto dydis - elementas sumažėja iki minimalaus dydžio.
+
+        </p>
+        <div class="reliatyvus kvadratuKonteineris">
+          <div class="kvadratas statinis">Static 1</div>
+          <div class="kvadratas statinis ">Static 2</div>
+          <div class="kvadratas fixed top_40 z_index10">fixed 3</div>
+          <div class="kvadratas statinis">Static 4</div>
+        </div>
+       <p>
+        Lipnioji pozicija - neišeina iš puslapio tekmės. Ekrano kraštams priartėjus prie jo jis prilimpa prie ekrano krašto per nurodytą top/right/bottom/left atstumą ir juda kartu su ekranu kol nepasiekia savo tėvinio elemento ribų. neišeina iš savo "parent" konteinerio 
+       </p>
+        <div class="kvadratuKonteineris stickyKonteineris  ">
+          <div class="kvadratas statinis">Static 1</div>
+          <div class="kvadratas statinis ">Static 2</div>
+          <div class="kvadratas statinis ">Static 3</div>
+          <div class="kvadratas sticky top_20">Static 4</div>
+        <div style="height:1500px">
+          
+          </div>
+         
+      </section>
+      <main>
+           <section>
+            <div> <!--comand line/terminal-->
+              <h1>Terminalo komandos</h1>
+              <ul>
+                <li>cd - change directory- pakeisti direktroija-vaikščiojimas tarp aplankalų</li>
+                <li>ls - </li>
+                <li>CTRL C - atšaukia vykdomą veiksmą.</li>
+                <li>TAB - užbaigia frazę arba pateikia pasiūlymus.</li>
+                <li>clear - nukelia į viršų</li>
+              </ul>
+
+            </div>
+            <div><!-- git komandos--> </div>
+            <h1>Git komandos</h1>
+            <ul>
+              <li>init inicializuoti-sukuria git repozitorija</li>
+              <li>status - statusas - tavo gito repozitorijos statusą</li>
+              <li>add -stage'ina/ prideda/prauošia   failus komitinimui</li>
+              <li>commit - sukuria kodo versiją iš stage'intų failų</li>
+            </ul>
+           </section>
+
+      </main>
+    </main>
+  </body>
+</html>
