@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>2 paskaita - CSS įvadas</title>
+    <style>
+      p {
+        font-weight: bold;
+        color: blue;
+      }
+      #namai {
+        line-height: 30px;
+        color: red;
+      }
+      .keliones {
+        border: 3px solid green;
+        border-radius: 10px;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <div style="font-family: monosapce">
+      <!--Inline CSS-->
+      <h1>Inline CSS - Linijinis CSS</h1>
+      <p style="color: lightpink; font-size: 28px; background-color: aqua">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel quod
+        consequatur deleniti modi nesciunt numquam odio repellendus optio
+        maiores quos deserunt possimus, dolore accusamus. Libero odit atque
+        ipsum possimus culpa.
+      </p>
+      <p style="color: antiquewhite">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, vitae.
+      </p>
+      <p>Naudojamas norint patestuoti,greitam stilizavimui.</p>
+    </div>
+    <div>
+      <!--Internal CSS -->
+      <h1>Internal CSS - Vidinis CSS</h1>
+      <p id="namai">
+        Vienas ID turi būti priskirtas tik vienam elementui. Vienas elementas
+        turi tik vieną ID.
+      </p>
+      <p class="keliones">
+        Viena klasė gali būti priskirta daugeliui elemntų. Vienas elementas gali
+        turėti daugelį klasių.
+      </p>
+      <div>
+        <!-- External CSS-->
+        <h1>External CSS - Išorinis CSS</h1>
+        <p>Naudojamas tvarkingai irteisingai stilizuojant elementus</p>
+        <p class="melynasTekstas raudonasTekstas">
+          <span class="paryskintasTekstas">Lorem ipsum </span> dolor sit, amet
+          consectetur adipisicing elit. Hic, placeat.
+        </p>
+        <p class="du">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga,
+          voluptates?
+        </p>
+      </div>
+    </div>
+    <section>
+      <!--Konspektas-->
+      <div>
+        <h1>CSS Rašymo būdai</h1>
+      <ul>
+        <li>
+          Inline - Linijinis rašomas tag'o viduje naudojant style atributą
+        </li>
+        <li>Internal - Vidinis rašomas style tag'o viduje (head dalyje)</li>
+        <li>
+          External - Išorinis rašomas atskirame CSS faile, kurį reikia prijungti
+          prie HTML naudojant link tag'ą
+        </li>
+      </div>
+      <div> <!-- CSS selektoriai-->
+          <h1>CSS Selector'iai</h1>
+          <ul>
+            <li>element - Parenkamas elementas pagal jo pavadinimą ( p{} ).</li>
+            <li>id - Sukuriamas susigalvotas ID pavadinimas ir priskiriamas vienam elementui. ( #idPavadinimas{}  ) </li>
+            <li>class - sukuriamas susigalvotas klasės pavadinimas ir priskiriamas bet kokiam kiekiui elementų ( .klasėsvardas{} ). </li>
+           </ul>
+      </div>    
+      <div> <!--Stiliai-->
+        <h1>CSS Stiliai</h1>
+        <ul>
+          <li>color - skirtas pakeisti teksto spalvą (color:red;).</li>
+          <li>font-size - skirtas pakeisti teksto dydį (font-size: 20px;)</li>
+          <li>background-color - skirtas pakeisti fono spalvą (background-color:aqua;)</li>
+          <li>font-family - skirtas pakeisti teksto šriftą (font-family: monospace;)</li>
+          <li>font-weight - skirtas pakeisti teksto storumą (font-weight: bold;)</li>
+          <li>line-height - skirtas pakeisti eilutės aukštį (line-height: 20px;)</li>
+          <li>border - skirtas nurodyti rėmelio storį + tipą + spalvą ( border: 5px solid red;)</li>
+          <li>border-radius - skirtas apvalinti rėmelio kampus (border-radius: 10px;)  </li>
+          <li>text-align - skirtas lygiuoti tekstą (text-align: center;)</li>
+          <li>font-style - skirtas pakreipti stilių (font-style: italic;)</li>
+          <li>list-styletype - skirtas pakeisti sąrašo žymėjimo tipą.</li>
+        </ul>
+
+      </div>
+
+      <div> <!--Spalvos-->
+        <ul>
+          <li>HSL - niekas nenaudoja</li>
+          <li>HEX - naudojamas plačiai (#Ff0000)</li>
+          <li>RGB - naudojamas taip pat plačiai kaip ir HEX. (rgb(255,0,0) </li>
+          
+        </ul>
+        <h1>Permatomas spalvos</h1>
+        <ul>
+          <li>
+            HSL permatomumas nuo 0 (pilnai permatomas) iki 1(pilnai matomas).
+          </li>
+          
+        </ul>
+
+      </div>
+
+
+
+      
+    </section>
+  </body>
+</html>

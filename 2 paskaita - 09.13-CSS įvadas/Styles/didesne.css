@@ -1,0 +1,39 @@
+body {
+  background-color: blanchedalmond;
+}
+.heading {
+  font-size: 40px;
+}
+.raudonasPerbrauktas {
+  text-decoration: line-through;
+  color: red;
+}
+.zaliaspalva {
+  color: green;
+}
+.melynaspalva {
+  color: blue;
+}
+.heading2 {
+  font-size: 24px;
+}
+.textasVidury {
+  text-align: center;
+}
+.manoDiena {
+  color: red;
+  font-size: 24px;
+}
+
+.photo {
+  width: auto;
+  height: 330px;
+}
+table {
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+td,
+th {
+  text-align: center;
+}

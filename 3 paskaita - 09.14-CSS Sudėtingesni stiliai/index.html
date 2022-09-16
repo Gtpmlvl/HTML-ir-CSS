@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3 Paskaita</title>
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+  <body id="home">
+    <header>
+      <nav>
+        <ul class="list">
+          <li><a href="#failuKeliai">Failų keliai </a></li>
+          <li><a href="#puslapioStruktura">Puslapio Struktūra</a></li>
+          <li><a href="#menuInfo">Menu info</a></li>
+          <li><a href="#displays">Display</a></li>
+          <li><a href="#modelBox"></a></li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+      <div id="failuKeliai">
+        <!-- FAilų Keliai-->
+        <h1>Failų kelių nurodymai</h1>
+        <img src="./Images/jpg.jpg" alt="" />
+        <p>Nurodant aplankalo vardą - nueinama į nurodytą aplankalą.</p>
+        <p>Norint atlikti sekandį veiksmą - reikia parašyti " / " .</p>
+        <img
+          src="./../1 paskaita - 09.12-HTML įvadas/keliones-i-madeira.jpg"
+          alt=""
+        />
+        <p>Norint žengti žingsnį atgal iš aplankalo - reikia parašyti " .. "</p>
+      </div>
+      <div id="puslapioStruktura">
+        <!-- Puslapio Struktūra-->
+        <h1>
+          <a
+            href="https://www.internetingishard.com/html-and-css/semantic-html/"
+            target="_blank"
+          >
+            Puslapio struktūra</a
+          >
+        </h1>
+        <ul>
+          <li>
+            header - puslapio viršus, kuriama nurodoma informacija apie
+            puslapį/meniu.
+          </li>
+          <li>nav - skirtas kurti puslapio meniu.</li>
+          <li>
+            footer - pusapio apačia, kurioje yra įvairi informacija (terms and
+            uses, privacy policy, copyrights, links,partneriai).
+          </li>
+          <li>section - didžiulė puslapio dalis.</li>
+          <li>div - maža puslapio dalis.</li>
+          <li>main - pagrindinė puslapio dalis.</li>
+          <li>article - main viduje esanti sekcija.</li>
+          <li>
+            aside - šoninės dalies puslapio sekcija (ne pagrindinė informacija)
+          </li>
+        </ul>
+        <img
+          src="./Images/New_york_times_square-terabass.jpg"
+          alt=""
+          class="strukturosImg"
+        />
+        <img
+          src="./Images/province-of-barcelona.jpg"
+          alt=""
+          class="strukturosImg"
+        />
+      </div>
+      <div id="menuInfo">
+        <!-- Menu info-->
+        <h1>Menu info</h1>
+        <p>
+          Kuriant menu - naudojamas nav tag'as, kurio viduje yra sąrašas. To
+          sąrašo elemnetų (li) viduje yra nuorodos tag'as (a), kuris nurodo į
+          kažkurią puslapio dalį arba kitą puslapį.
+        </p>
+        <p>
+          Nuorodos tag'o (a) atidaromoje dalyje esantis atributas href nurodo į
+          kur vartotojas turi būt nukeltas paspaudus ant nuorodos.
+        </p>
+        <p>
+          Jeigu atributas nurodo į kažkokį ID ( href= "#ID_pavadinimas"), tuomet
+          vartotojas yra nukeliamas į puslapio dalį kuriai yra suteiktas
+          nurodytas ID (id=ID_pavadinimas). <br />
+          <a href="#">Puslapio viršus</a>
+        </p>
+        <p>
+          Jeigu href atributas nurodo į kitą HTML failą (href="./html") , tuomet
+          vartotojas nukeliamas į nurodytą html failą.
+        </p>
+        <br />
+        <a href="./Pages/random.html">Kitas Psl</a>
+      </div>
+      <div id="displays">
+        <!--DISPLAYS-->
+        <h1>Inline, Block ir Inline-Block</h1>
+        <div>
+          <!--Inline-->
+          <h2>Inline</h2>
+          <p>
+            Inline elementai yra tokie elementai, kurie užima tik tiek vietos
+            ekrane, kiek jiems yra reikalinga. Minusas tas, kad negalima keisti
+            šių elemtnų dydžių. Pliusas tas, kad jie lengvai įtalpinami tarp
+            kitų informacijos vienetų.<br />
+            Tag'ų pavyzdžiai yra : a, span, img, input, button,
+            label,select,textarea.
+          </p>
+          <div class="linijinis kvadratas">Linijinis</div>
+          <div class="linijinis kvadratas">Linijinis</div>
+          <div class="linijinis kvadratas">Linijinis</div>
+        </div>
+        <div>
+          <!--Block-->
+          <h2>Block</h2>
+          <p>
+            Block elementai yra tokie, kurie užima visą leistiną plotį ir
+            neįsileidžia kitų elementų į tą pačią eilute. Minusas tas, kad užima
+            visą leistiną plotį ir neįsileidžia kitų. Pliusas, kad galima keisti
+            jų dydį.<br />
+            Tag'ų pavyzdžiai: h1-h6, p, div, section, main, nav, article,
+            blockqueate, aside, canvas, ol, ul, li etc...
+          </p>
+          <div class="blokinis kvadratas">Blokinis</div>
+          <div class="blokinis kvadratas">Blokinis</div>
+          <div class="blokinis kvadratas">Blokinis</div>
+        </div>
+        <div>
+          <!--INLINE BLOCK-->
+          <h2>Inline-Block</h2>
+          <p>
+            Inline-block yra tokie elementai, kurie pasisavina geriausias
+            Blockinių ir linijinių elementų savybes, Tai reiškia jie užima tik
+            tiek vietos kiek jiems reikiac bet jų dydį vis vien galima keisti.
+          </p>
+          <div class="linijinisBlokinis kvadratas">L-B</div>
+          <div class="linijinisBlokinis kvadratas">L-B</div>
+          <div class="linijinisBlokinis kvadratas">L-B</div>
+        </div>
+        <div id="modelBox">
+          <!--Model Box-->
+          <h1>Model Box</h1>
+          <p>
+            Margin - Atstumas nuo elemento rėmelių iki aplinkinių elementų
+            rėmelių (skirtingų elementų marginai persidengia iš šonų).
+          </p>
+          <p>Boreder - rėmelis, kuris yra tarp Margin ir Padding.</p>
+          <p>Padding - atstumas nuo elemento content iki elemento rėmelio.</p>
+          <p>
+            Content - elemento turinys. (blokinio elemento turinys užims visą
+            leidžianą eilutę arba nurodytą dydį.
+          </p>
+          <img
+            src="https://www.simplilearn.com/ice9/free_resources_article_thumb/CSS-Box-Model.png"
+            alt=""
+            width="350"
+          />
+        </div>
+        <div class="kvadratas linijinisBlokinis border">Pirmas</div>
+        <div class="kvadratas linijinisBlokinis margin1 border1 padding1">
+          Antras
+        </div>
+        <div class="kvadratas linijinisBlokinis margin1">Trecias</div>
+      </div>
+      <p>
+        Galime aprašyti Margin, Border ir Padding nustatymus 4 skirtingais
+        būdais. <br />
+        Vienas matmuo visom 4-iom kraštinėm (margin:50px).<br />
+        Rašant dvejus matmenis - pirmasis priskiriamas viršuj ir apačiai,
+        antrasis priskiriamas šonams.(margin: 20px 50px).<br />
+        Rašant 3 matmenis pirmasis priskiriamas viršuj,antrasis priskiriamas
+        šonams, trečiasis priskiriamas apačiai. (30px 20px 10px) Rašant 4
+        matmenis pirmasis priskiriami eilės tvarka pagal laikrodžio rodyklės
+        kryptį pradedant nuo viršutinio.(border-style:solid dashed dotted
+        double)
+      </p>
+      <p>
+        Galima nuordyti kurią kraštinę nori stilizuoti.
+        (border-right-color:orange;)
+      </p>
+    </section>
+  </body>
+</html>

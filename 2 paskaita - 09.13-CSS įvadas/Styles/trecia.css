@@ -1,0 +1,10 @@
+.link {
+  color: aquamarine;
+}
+.listas {
+  list-style-type: " - ";
+  padding-inline-start: 10px;
+}
+.listas2 {
+  padding-inline-start: 15px;
+}
