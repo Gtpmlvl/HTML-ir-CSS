@@ -7,5 +7,116 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <section>
+      <h1>Display: flex</h1>
+      <p>
+        Suteikus konteineriui flex nustatymą jo vidije elementai išsidėsto
+        vienas šalia kito.<br />
+        Elementai gali susispausti, kad tilptų į vieną eilutę šitaip ignoruodami
+        savo pačių nustatytus dydžius.<br />
+        Suteikus flex konteineriui flex-drection - galime valdyti jo viduje
+        esančių elementų išsidėstymo tvarką.<br />
+        Suteikus flex konteineriui flex-wrap - galime nurodyti ar ir kaip elgtis
+        esant elementų pertekliui vienoje eilutėje arba stulpelyje.<br />
+        Suteikus flex conteineriui justify-content - galime valdyti kaip
+        elementai išsidėsto(tarpai tarp elementų) eilutėje (jeigu flex-direction
+        yra row).<br />Suteikus konteineriui align-content - galime valdyti kaip
+        elementai išsidėsto (tarpai tarp elementų) stulpelyje (jeigu
+        flex-direction yra row). <br />
+        Suteikus flex conteineriui align-items - galime valdyti kaip elementai
+        išsidėsto (elemntų grupės) stulpelyje(jeigu flex-direction yra row).<br />
+        Suteikus flex konteineriui gap - galime nurodyti kokie tarpai turi būti
+        tarp jo vaikinių elementų.
+      </p>
+      <div class="flexContainer">
+        <div class="kvadratas">1</div>
+        <div class="kvadratas">2</div>
+        <div class="kvadratas">3</div>
+        <div class="kvadratas">4</div>
+        <div class="kvadratas">5</div>
+        <div class="kvadratas">6</div>
+        <div class="kvadratas">7</div>
+        <div class="kvadratas">8</div>
+        <div class="kvadratas">9</div>
+        <div class="kvadratas">10</div>
+        <div class="kvadratas">12</div>
+        <div class="kvadratas">13</div>
+      </div>
+      <section>
+        <div class="pirmasPratimas">
+          <!--Simple flex-->
+          <div class="pirmasKvadratas kvadratai">1</div>
+
+          <div class="flexInFlex">
+            <div class="antrasKvadratas kvadratai">2</div>
+            <div class="flexInflexInFlex">
+              <div class="treciasKvadratas kvadratai">3</div>
+              <div class="ketvirtasKvadratas kvadratai">4</div>
+            </div>
+          </div>
+        </div>
+
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+
+        <div class="bigFlexTask">
+          <div class="bigTaskContainer containerTask1">
+            <div class="h33 containerTask1NextLevel">
+              <div class="uzd1 w33"></div>
+              <div class="uzd1 w66"></div>
+            </div>
+            <div class="h33 containerTask1NextLevel">
+              <div class="uzd1 w66"></div>
+              <div class="uzd1 w33"></div>
+            </div>
+            <div class="h33 containerTask1NextLevel">
+              <div class="uzd1 w33"></div>
+              <div class="uzd1 w66"></div>
+            </div>
+          </div>
+        </div>
+        <br />
+        <br />
+        <div class="bigFlexTask">
+          <!-- Big Flex TASK-->
+          <div class="bigTaskContainer containerTask1">
+            <!-- 1 -->
+            <div class="h33 containerTask1NextLevel">
+              <div class="taskBg w33"></div>
+              <div class="taskBg w66"></div>
+            </div>
+            <div class="h33 containerTask1NextLevel">
+              <div class="taskBg w66"></div>
+              <div class="taskBg w33"></div>
+            </div>
+            <div class="h33 containerTask1NextLevel">
+              <div class="taskBg w33"></div>
+              <div class="taskBg w66"></div>
+            </div>
+          </div>
+
+          <div class="bigTaskContainer containerTask2">
+            <!-- 3 -->
+            <div class="containerTask2Level1 h66">
+              <div class="taskBg w66">1</div>
+              <div class="containerTask2Level2 w33">
+                <div class="taskBg h50">2</div>
+                <div class="taskBg h50">3</div>
+              </div>
+            </div>
+            <div class="containerTask2Level1 h33">
+              <div class="taskBg w33">4</div>
+              <div class="taskBg w33">5</div>
+              <div class="taskBg w33">6</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+  </body>
 </html>

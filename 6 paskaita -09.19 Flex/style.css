@@ -1,0 +1,120 @@
+.kvadratas {
+  width: 100px;
+  height: 100px;
+  background-color: aqua;
+  border: 5px solid black;
+  text-align: center;
+  line-height: 100px;
+}
+.flexContainer {
+  height: 500px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column-reverse;
+  flex-wrap: wrap-reverse;
+
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 10px 20px;
+}
+.alignSelfEnd {
+  align-self: flex-end;
+}
+
+.pirmasPratimas {
+  display: flex;
+  gap: 30px;
+}
+
+.kvadratai {
+  background-color: orange;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}
+
+.pirmasKvadratas {
+  width: 330px;
+  height: 230px;
+}
+.antrasKvadratas {
+  width: 330px;
+  height: 100px;
+}
+.treciasKvadratas {
+  width: 150px;
+  height: 100px;
+}
+.ketvirtasKvadratas {
+  width: 150px;
+  height: 100px;
+}
+.flexInFlex {
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+}
+.flexInflexInFlex {
+  display: flex;
+  gap: 30px;
+}
+
+/* bigt task */
+.bigFlexTask {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.bigTaskContainer {
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+}
+.taskBg {
+  background-image: url("./images/jpg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.w66 {
+  width: 66%;
+}
+.w33 {
+  width: 33%;
+}
+.h66 {
+  height: 66%;
+}
+.h33 {
+  height: 33%;
+}
+.h50 {
+  height: 50%;
+}
+/* task1 */
+.containerTask1 {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.containerTask1NextLevel {
+  display: flex;
+  gap: 3px;
+}
+/* task3 */
+.containerTask2 {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+.containerTask2Level1 {
+  display: flex;
+  gap: 1px;
+}
+.containerTask2Level2 {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
