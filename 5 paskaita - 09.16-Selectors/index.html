@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../5 paskaita - 09.16-Selectors/styles.css" />
+  </head>
+  <body>
+    <section>
+      <!-- Icon-->
+
+      <div>
+        <h1>Ikona</h1>
+        <h2>Font-Awesome</h2>
+
+        <p>
+          Norint naudoti Font-awesome ikona reikia prijungti jo biblioteką.
+          (https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css).
+          <br />
+          Norint panaudoti ikonas reikia naudoti i arba span tag'us ir suteikus
+          class atributą, nurodyti fa klasę ir norimos ikonos klasą. <br />
+          Norint panaudoti ikonas reikia naudoti i arba span tag's ir suteikus
+          class atributą, nurodyti fa klasę ir content dalyje įrašyti ikonos
+          Unicode.
+        </p>
+
+        <i class="fa fa-youtube"></i>
+        <i class="fa fa-youtube-play"></i>
+        <span class="fa fa-youtube-square"></span>
+        <br />
+        <h2>Bootstrap</h2>
+        <p>
+          Norint naudoti Bootstrap ikona reikia prijungti jo
+          biblioteką.(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css)
+        </p>
+        <br />
+        <p>
+          Norint panaudoti ikonas reikia naudoti i arba span tagus ir jiem
+          suteikus class atributą, nurodyti glyphicon klasą ir content dalyje
+          įrašyti ikonos Unicode.
+        </p>
+        <br />
+        <br />
+        <span class="glyphicon glyphicon-adjust"></span>
+        <br />
+        <br />
+        <p>
+          Norint naudoti Google ikona reikia prijungti jo
+          biblioteką.(https://fonts.googleapis.com/icon?family=Material+Icons)
+        </p>
+        <p>
+          Norint panaudoti google ikonas reikia naudoti i arba span tagus ir
+          jiem suteikus class atributą, nurodyti material-icons klasą ir content
+          dalyje įrašyti ikonos Unicode.
+        </p>
+        <i class="material-icons">3d_rotation</i>
+        <i class="material-icons">&#xeb3b;</i>
+      </div>
+      <div>
+        <!--Ikonū stilizavimas-->
+        <h2>Ikonų stilizavimas</h2>
+        <p>
+          Ikonas reikia stilizuoti kaip tekstinius elementus. (ne width+height,
+          bet font-size ir pan)
+        </p>
+        <br />
+
+        <i class="fa fa-youtube bigIcon"></i>
+
+        <i class="glyphicon glyphicon-adjust redIcon bigIcon"></i>
+        <i class="material-icons italicIcon bigIcon">3d_rotation</i>
+      </div>
+
+      <!-- fono trinimo -->
+      <h1>Trinti foną</h1>
+      <p>
+        <a href="https://www.pxlr.com">programėlė</a> kurią naudojant galima
+        ištrint fonus įvairiems paveiksliukams.
+      </p>
+      <h3>Žingsniai</h3>
+      <ol>
+        <li>Atsidaryti progrramėlę.</li>
+        <li>Pasirinkti editorių.</li>
+        <li>pasirinkti nuotrauką.</li>
+        <li>Pridėti papildomą sluoksnį į viršų.</li>
+        <li>Pasirinkus Wand tool'ą pažymėti foną.</li>
+        <li>Pasirnkiti eraser tool'ą ištrinti foną.</li>
+        <li>Išsaugoti redaguotą nuotrauką.</li>
+      </ol>
+    </section>
+    <section>
+      <h2>Parent ir child elements</h2>
+      <p>
+        Elementas, kuris savo viduje turi kitus elementus yra Tėvinis. <br />
+        Elementas, kuris yra kažkokio elemento viduje yra vaikinis elementas.
+      </p>
+      <p>
+        Elementas gali turėti vieną vienintėlį tėvinį elementą. <br />
+        Elementas gali turėti daugelį vaikinių elemenų.
+      </p>
+      <ul>
+        <li>Pirmas</li>
+        <li>Antras</li>
+        <li>
+          Trečias
+          <ul>
+            <li>Trečio pirmas</li>
+            <li>Trečio antras</li>
+            <li>Trečio trečias</li>
+          </ul>
+        </li>
+        <li>Ketvirtas</li>
+      </ul>
+    </section>
+    <section class="class3">
+      <h1>CSS Selectors</h1>
+      <p>Visus CSS selektorius galima rasti <a href="">čia</a></p>
+      <ul>
+        <li>Element - tag'o vardas.</li>
+        <li class="klase0">.class - tag'ui suteikta klasė.</li>
+        <li id="id0">#id - tag'ui suteiktas id.</li>
+        <li class="class1 class2">
+          .class1.class2 - tagui suteiktos abi klasės arba daugiau.
+        </li>
+        <li class="class4">
+          .class3 .class4 - tag'ui suteikia stilius, jeigu jis turi class4 klasę
+          ir yra class3 palikuonis.
+        </li>
+        <li>* - parenka viską.</li>
+        <li>element1, element2 - i6vardinti ir kableliu atskirti elementus</li>
+        <li>
+          element1 > element2 - element1 vaikinis element2 / element2, kurio
+          tėvinis elementas yra elementas1.
+        </li>
+        <li>a:link - nelankytos nuorodos</li>
+        <li>a:visited - lankytos nuorodos.</li>
+        <li>a:active - aktyvi nuoroda (paspaudimo momentas)</li>
+        <li>a:hover - elementas ant kurio yra užvesta pelė.</li>
+        <li></li>
+      </ul>
+    </section>
+    <!--CSS selectors-->
+  </body>
+</html>

@@ -1,0 +1,50 @@
+body {
+  font-family: initial;
+}
+.bigIcon {
+  font-size: 50px;
+}
+.redIcon {
+  color: red;
+}
+.italicIcon {
+  font-style: italic;
+}
+/*mokinames selektorius*/
+
+li {
+  font-size: 20px;
+}
+.klase0 {
+  color: red;
+}
+
+#id0 {
+  color: blue;
+}
+.class1.class2 {
+  text-decoration: underline;
+}
+.class3 .class4 {
+  text-decoration: line-through;
+}
+section.class3 * {
+  font-size: 30px;
+}
+
+.class3 > p {
+  background-color: aqua;
+}
+a:link {
+  color: blue;
+}
+a:visited {
+  color: purple;
+}
+a:active {
+  color: red;
+}
+li:hover {
+  background-color: azure;
+  color: orange;
+}
