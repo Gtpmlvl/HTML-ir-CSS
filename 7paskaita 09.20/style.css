@@ -1,0 +1,229 @@
+/* header {
+  height: 50px;
+  background-color: aliceblue;
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mainMenu {
+  display: flex;
+  gap: 25px;
+}
+
+.navLink {
+  text-decoration: none;
+}
+a:link {
+  color: black;
+  text-decoration: none;
+}
+.logoStyle {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+} */
+/* RESET */
+* {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  margin-bottom: 1000px;
+}
+img {
+  max-width: 100%;
+}
+
+/* COMMON CSS */
+
+.container {
+  max-width: 800px;
+
+  margin: 0 auto;
+}
+
+.flexCenter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex {
+  display: flex;
+}
+.mainHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0px 4px 11px rgb(114, 104, 104);
+}
+
+.logo {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  padding: 0 20px;
+}
+.logo span {
+  font-weight: normal;
+}
+.navLink {
+  padding: 10px 20px;
+}
+.mainHeader a:hover {
+  background-color: blanchedalmond;
+}
+.mainHeader a {
+  letter-spacing: 4px;
+}
+/* HERO */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 100vh;
+  background: url(./img/architect.jpg) no-repeat center;
+  background-size: cover;
+}
+.heroTitle span {
+  font-weight: normal;
+  letter-spacing: 3px;
+}
+.heroTitle {
+  font-size: 40px;
+  color: white;
+}
+/* PROJECT */
+.projectContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.projects {
+  padding: 50px 30px;
+}
+.hr {
+  height: 1px;
+  margin-bottom: 20px;
+  background-color: aliceblue;
+}
+
+.projectDiv {
+  position: relative;
+
+  flex-basis: 20%;
+  flex-grow: 1;
+}
+.kortele {
+  padding: 5px 30px;
+  background-color: black;
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+}
+/* CONTACT */
+/* .didelisContact {
+  display: flex;
+
+  border: 1px solid black;
+}
+.contactInput {
+  border: 1px solid black;
+}
+
+.firstName {
+  display: flex;
+  gap: 25px;
+}
+.email {
+  display: flex;
+}
+.contact2 {
+  display: flex;
+} */
+.formContainer {
+  background-color: #a2c0be;
+  max-width: 400px;
+  min-height: 500px;
+  padding: 20px 30px;
+}
+.input {
+  display: block;
+  padding: 5px 7px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 100%;
+  margin-top: 8px;
+}
+
+.input:focus-visible {
+  outline-color: #476260;
+}
+.contactForm {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.half {
+  flex-basis: 47%;
+}
+.full {
+  flex-basis: 100%;
+}
+.textarea {
+  resize: vertical;
+}
+.button {
+  color: whitesmoke;
+  background-color: #343a40;
+  padding: 10px 16px;
+  font-size: 16px;
+  border-radius: 18px;
+}
+/* .contactContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #a2c0be;
+} */
+
+.contactContainer {
+  background-color: #495554;
+  width: 400px;
+  height: 500px;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  
+}
+
+/* .address {
+  color: white;
+  display: flex;
+  justify-content: center;
+} */
+.flex{
+  display:flex;
+}
+
+
+.contactInfo{
+  
+
+}
