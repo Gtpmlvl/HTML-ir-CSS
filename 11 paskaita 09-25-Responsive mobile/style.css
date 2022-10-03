@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+} 
+
+body {
+  margin: 0 ;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #ededed;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+
+.container {
+  padding:0.8rem;
+} 
+
+.card {
+  padding: 1rem;
+  box-shadow: 5px 5px 10px rgb(180, 190, 194);
+  border: 1px solid rgb(191, 180, 180);
+  border-radius: 5px;
+  background-color: snow;
+}
+
+/*  helpers */
+
+.flex {
+  display: flex;
+  gap: 1rem;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.align-start {
+  align-items: flex-start;
+}
+
+.max-w-300 {
+  max-width: 300px;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+html {
+  font-size: 100%;
+}
+
+.post {
+  margin-bottom: 1rem;
+}
+
+.post p {
+  font-size: 16px;
+}
+
+.post h3 {
+  font-size: 1.4rem;
+}
+
+@media screen and (min-width: 768px) {
+  /* tablet taisykles */
+  html {
+    font-size: 120%;
+  }
+  .post {
+    margin-bottom: 0;
+  }
+
+  .post_1 {
+    grid-area: one;
+  }
+  .post_2 {
+    grid-area: two;
+  }
+  .post_3 {
+    grid-area: three;
+  }
+  .post_4 {
+    grid-area: four;
+  }
+
+  .posts {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      'one one one one'
+      'two two three four';
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  /* PC screen */
+  html {
+    font-size: 145%;
+  }
+  .posts {
+    
+    grid-template-areas:
+      'one one two two'
+      'one one three four';
+  }
+}
