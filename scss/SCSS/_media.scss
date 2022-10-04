@@ -4,6 +4,34 @@
       grid-template-columns: repeat(2, 1fr);
     }
   }
+
+  .counters{
+      
+     
+
+     .info-details{
+
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      width:580px;
+     }
+     .info-details__group{
+      position: relative;
+    }
+    .info-details__group::after{
+      position: absolute;
+      content:'';
+      top:0;
+      right:0;
+      border-right: 1px solid #fff;
+      height: 100%;
+      
+
+
+    }
+    
+
+  }
 }
 
 @media screen and (min-width: 1000px) {
@@ -12,4 +40,15 @@
       grid-template-columns: repeat(3, 1fr);
     }
   }
-}
+
+  .counters{
+   
+        .info-details{
+      
+        width:1085px;
+        gap:0;
+       }
+    }
+    
+
+  }

@@ -66,6 +66,36 @@
   background: url('/IMG/count-bg\ \(1\).jpg') no-repeat center;
   background-size: cover;
   background-attachment: fixed;
+
+  .info-details{
+    display: flex;
+    flex-direction: column;
+    gap:26px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+   
+
+  }
+  .info-details__group h2{
+    font-size: 65px;
+    color: #fff;
+    margin-bottom: 10px;
+    font-weight: 700;
+
+    
+  }
+  .info-details__group p{
+    font-size:20px;
+    color:#fff;
+    font-weight:700;
+
+
+  }
+
 }
 
 @import 'media';
