@@ -1,7 +1,13 @@
 @use 'vars' as v;
 
 body{
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+}
+
+p{
+  color:transparentize(black, 0.5);
+  font-size: 14px;
+
 }
 
 .btn{
@@ -30,9 +36,14 @@ body{
   
 }
 .section-title{
+  font-family: 'Montserrat', sans-serif;
   color: v.$primary-color;
   font-size: 2rem;
   margin: 0 0 0.5em;
   
   
+}
+.container{
+  padding-left:1rem;
+  padding-right: 1rem;
 }
